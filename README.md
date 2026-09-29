@@ -1,4 +1,8 @@
-# Papir
+<p align="center">
+  <img src="Papir/Assets.xcassets/AppIcon.appiconset/AppIcon-256.png" width="128" alt="Papir app icon">
+</p>
+
+<h1 align="center">Papir</h1>
 
 Papir is a fast, private scratchpad that lives in your macOS menu bar. Open it, type or paste anything, and return to your work. Your note is saved automatically and never leaves your Mac.
 
@@ -11,6 +15,12 @@ Papir is a fast, private scratchpad that lives in your macOS menu bar. Open it, 
 - Optional launch at login
 - Dark Mode and accessibility support
 - No accounts, analytics, advertising, or network requests
+
+## Screenshots
+
+| Light Mode | Dark Mode |
+| :---: | :---: |
+| <img src="docs/screenshots/papir-light.png" alt="Papir in Light Mode"> | <img src="docs/screenshots/papir-dark.png" alt="Papir in Dark Mode"> |
 
 ## Requirements
 
