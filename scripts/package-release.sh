@@ -6,6 +6,10 @@ output="$root/dist"
 derived="$output/DerivedData"
 app="$derived/Build/Products/Release/Papir.app"
 archive="$output/Papir-macOS-arm64.zip"
+version=${VERSION:-local}
+dmg="$output/Papir-$version-macOS-arm64.dmg"
+staging=$(mktemp -d "${TMPDIR:-/tmp}/papir-dmg.XXXXXX")
+trap 'rm -rf "$staging"' EXIT
 
 mkdir -p "$output"
 
@@ -24,19 +28,33 @@ xcodebuild build \
   CODE_SIGNING_ALLOWED=NO
 
 if [[ -n ${DEVELOPER_ID_APPLICATION:-} ]]; then
-  codesign --force --options runtime --timestamp --sign "$DEVELOPER_ID_APPLICATION" "$app"
+  codesign --force --options runtime --timestamp \
+    --entitlements "$root/Papir/Papir.entitlements" \
+    --sign "$DEVELOPER_ID_APPLICATION" "$app"
+else
+  codesign --force --options runtime \
+    --entitlements "$root/Papir/Papir.entitlements" \
+    --sign - "$app"
 fi
 
 ditto -c -k --keepParent "$app" "$archive"
+ditto "$app" "$staging/Papir.app"
+ln -s /Applications "$staging/Applications"
+hdiutil create -quiet -volname Papir -srcfolder "$staging" -ov -format UDZO "$dmg"
+
+if [[ -n ${DEVELOPER_ID_APPLICATION:-} ]]; then
+  codesign --force --timestamp --sign "$DEVELOPER_ID_APPLICATION" "$dmg"
+else
+  codesign --force --sign - "$dmg"
+fi
 
 if [[ -n ${NOTARY_PROFILE:-} ]]; then
-  xcrun notarytool submit "$archive" --keychain-profile "$NOTARY_PROFILE" --wait
-  xcrun stapler staple "$app"
-  ditto -c -k --keepParent "$app" "$archive"
+  xcrun notarytool submit "$dmg" --keychain-profile "$NOTARY_PROFILE" --wait
+  xcrun stapler staple "$dmg"
 fi
 
 if [[ -z ${DEVELOPER_ID_APPLICATION:-} ]]; then
-  print "Created unsigned local package: $archive"
+  print "Created unsigned local packages: $archive and $dmg"
 else
-  print "Created signed package: $archive"
+  print "Created signed packages: $archive and $dmg"
 fi

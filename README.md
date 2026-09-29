@@ -29,9 +29,11 @@ Papir is a fast, private scratchpad that lives in your macOS menu bar. Open it, 
 
 ## Installation
 
-Download the latest signed and notarized ZIP from [GitHub Releases](../../releases/latest), extract it, and move **Papir.app** to your Applications folder.
+Download the latest DMG from [GitHub Releases](../../releases/latest), open it, and drag **Papir.app** into the Applications folder.
 
 Papir runs only in the menu bar and does not appear in the Dock.
+
+Current releases are unsigned. On first launch, macOS may block Papir because it cannot verify the developer. After attempting to open Papir, go to **System Settings → Privacy & Security**, scroll to **Security**, click **Open Anyway**, and confirm. Only do this when you downloaded Papir from this repository.
 
 ## Usage
 

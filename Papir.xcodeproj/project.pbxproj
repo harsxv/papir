@@ -34,6 +34,7 @@
 		7E639365EF3BB2848AAD1A35 /* ScratchpadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchpadView.swift; sourceTree = "<group>"; };
 		9B456E3FD88EB54B46704E65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A84B241B8A60B87CE1C9B665 /* ScratchpadStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchpadStore.swift; sourceTree = "<group>"; };
+		D4B4DA38D3F3F7A2AC9B6EE4 /* Papir.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Papir.entitlements; sourceTree = "<group>"; };
 		E1B67E46FDC14C8DF1E50BEB /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
 		E69D512687EA663D6E5CAFA2 /* Papir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Papir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -53,6 +54,7 @@
 			children = (
 				E1B67E46FDC14C8DF1E50BEB /* AppController.swift */,
 				9B456E3FD88EB54B46704E65 /* Assets.xcassets */,
+				D4B4DA38D3F3F7A2AC9B6EE4 /* Papir.entitlements */,
 				03B4F8EAC1696599C14EFC70 /* PapirApp.swift */,
 				A84B241B8A60B87CE1C9B665 /* ScratchpadStore.swift */,
 				7E639365EF3BB2848AAD1A35 /* ScratchpadView.swift */,
@@ -262,6 +264,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Papir/Papir.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_APP_SANDBOX = YES;
@@ -341,6 +344,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Papir/Papir.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_APP_SANDBOX = YES;
