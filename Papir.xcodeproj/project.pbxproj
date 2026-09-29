@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FB4EDDBF63977D4D04990F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B456E3FD88EB54B46704E65 /* Assets.xcassets */; };
+		669E7A246B7EBC095BBC39E3 /* ScratchpadStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B241B8A60B87CE1C9B665 /* ScratchpadStore.swift */; };
+		79285B4EA061845A5E072ABA /* ScratchpadStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5607AA16101543DFE47F41DB /* ScratchpadStoreTests.swift */; };
+		DA912D01FAEBF6F88ED90828 /* PapirApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B4F8EAC1696599C14EFC70 /* PapirApp.swift */; };
+		E6C8606558164EA2FF11C920 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E332C24AE2C0949EA27937B /* SettingsView.swift */; };
+		F1D823C4034DA22380527400 /* ScratchpadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E639365EF3BB2848AAD1A35 /* ScratchpadView.swift */; };
+		F3842EB968006AE1D81CD99F /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B67E46FDC14C8DF1E50BEB /* AppController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4B177453DA7FC441B3B4912 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14CA1692AC0BDE8F7F8B751B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 731DFE045F0A84C026E5BEED;
+			remoteInfo = Papir;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03B4F8EAC1696599C14EFC70 /* PapirApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PapirApp.swift; sourceTree = "<group>"; };
+		1F86A9B98C29AE78288AE69F /* PapirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PapirTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5607AA16101543DFE47F41DB /* ScratchpadStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchpadStoreTests.swift; sourceTree = "<group>"; };
+		6E332C24AE2C0949EA27937B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7E639365EF3BB2848AAD1A35 /* ScratchpadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchpadView.swift; sourceTree = "<group>"; };
+		9B456E3FD88EB54B46704E65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A84B241B8A60B87CE1C9B665 /* ScratchpadStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchpadStore.swift; sourceTree = "<group>"; };
+		E1B67E46FDC14C8DF1E50BEB /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
+		E69D512687EA663D6E5CAFA2 /* Papir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Papir.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		34F9A83086E5BC061157D081 = {
+			isa = PBXGroup;
+			children = (
+				3F9A09AA15D688A4BD55BDBB /* Papir */,
+				A18C8F2688A03EB9AE6C0214 /* PapirTests */,
+				90E873BAB41129E27FD4E75B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F9A09AA15D688A4BD55BDBB /* Papir */ = {
+			isa = PBXGroup;
+			children = (
+				E1B67E46FDC14C8DF1E50BEB /* AppController.swift */,
+				9B456E3FD88EB54B46704E65 /* Assets.xcassets */,
+				03B4F8EAC1696599C14EFC70 /* PapirApp.swift */,
+				A84B241B8A60B87CE1C9B665 /* ScratchpadStore.swift */,
+				7E639365EF3BB2848AAD1A35 /* ScratchpadView.swift */,
+				6E332C24AE2C0949EA27937B /* SettingsView.swift */,
+			);
+			path = Papir;
+			sourceTree = "<group>";
+		};
+		90E873BAB41129E27FD4E75B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E69D512687EA663D6E5CAFA2 /* Papir.app */,
+				1F86A9B98C29AE78288AE69F /* PapirTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A18C8F2688A03EB9AE6C0214 /* PapirTests */ = {
+			isa = PBXGroup;
+			children = (
+				5607AA16101543DFE47F41DB /* ScratchpadStoreTests.swift */,
+			);
+			path = PapirTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		479BC40C29FAFCBA6829B8B5 /* PapirTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65F2CC1B29633F85D27C582D /* Build configuration list for PBXNativeTarget "PapirTests" */;
+			buildPhases = (
+				19D9F47D13B0C3447C912EF0 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCE2BD63F8605281986D4FB3 /* PBXTargetDependency */,
+			);
+			name = PapirTests;
+			packageProductDependencies = (
+			);
+			productName = PapirTests;
+			productReference = 1F86A9B98C29AE78288AE69F /* PapirTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		731DFE045F0A84C026E5BEED /* Papir */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C769592F76048050EE4B4E09 /* Build configuration list for PBXNativeTarget "Papir" */;
+			buildPhases = (
+				A4E7C131B652F343680D7538 /* Sources */,
+				BCAAE58CC44CA20625209DEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Papir;
+			packageProductDependencies = (
+			);
+			productName = Papir;
+			productReference = E69D512687EA663D6E5CAFA2 /* Papir.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14CA1692AC0BDE8F7F8B751B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					731DFE045F0A84C026E5BEED = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A7756CD4414808A13611D5B9 /* Build configuration list for PBXProject "Papir" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 34F9A83086E5BC061157D081;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 90E873BAB41129E27FD4E75B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				731DFE045F0A84C026E5BEED /* Papir */,
+				479BC40C29FAFCBA6829B8B5 /* PapirTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCAAE58CC44CA20625209DEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB4EDDBF63977D4D04990F0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19D9F47D13B0C3447C912EF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79285B4EA061845A5E072ABA /* ScratchpadStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4E7C131B652F343680D7538 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3842EB968006AE1D81CD99F /* AppController.swift in Sources */,
+				DA912D01FAEBF6F88ED90828 /* PapirApp.swift in Sources */,
+				669E7A246B7EBC095BBC39E3 /* ScratchpadStore.swift in Sources */,
+				F1D823C4034DA22380527400 /* ScratchpadView.swift in Sources */,
+				E6C8606558164EA2FF11C920 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCE2BD63F8605281986D4FB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 731DFE045F0A84C026E5BEED /* Papir */;
+			targetProxy = D4B177453DA7FC441B3B4912 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00D8D39E94AA5F2BEF73CA98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		14A75AFC9116E24D838C5A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Papir;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.papir.Papir;
+				PRODUCT_NAME = Papir;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		23DB0C56B367780051194925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		64BCAE8D0BAC7EDE6BBBB7E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Papir;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.papir.Papir;
+				PRODUCT_NAME = Papir;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8A6E217BF43C5B679C693263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.papir.PapirTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Papir.app/Contents/MacOS/Papir";
+			};
+			name = Debug;
+		};
+		D6ED345EEA65AFC147CEF1AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.papir.PapirTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Papir.app/Contents/MacOS/Papir";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65F2CC1B29633F85D27C582D /* Build configuration list for PBXNativeTarget "PapirTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A6E217BF43C5B679C693263 /* Debug */,
+				D6ED345EEA65AFC147CEF1AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A7756CD4414808A13611D5B9 /* Build configuration list for PBXProject "Papir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D8D39E94AA5F2BEF73CA98 /* Debug */,
+				23DB0C56B367780051194925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C769592F76048050EE4B4E09 /* Build configuration list for PBXNativeTarget "Papir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64BCAE8D0BAC7EDE6BBBB7E6 /* Debug */,
+				14A75AFC9116E24D838C5A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14CA1692AC0BDE8F7F8B751B /* Project object */;
+}

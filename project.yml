@@ -1,0 +1,50 @@
+name: Papir
+
+options:
+  bundleIdPrefix: app.papir
+  deploymentTarget:
+    macOS: "14.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    ARCHS: arm64
+
+targets:
+  Papir:
+    type: application
+    platform: macOS
+    sources: Papir
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.papir.Papir
+        PRODUCT_NAME: Papir
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Papir
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.productivity
+        INFOPLIST_KEY_LSUIElement: YES
+        ENABLE_APP_SANDBOX: YES
+        ENABLE_HARDENED_RUNTIME: YES
+        CODE_SIGN_STYLE: Automatic
+
+  PapirTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources: PapirTests
+    dependencies:
+      - target: Papir
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.papir.PapirTests
+        GENERATE_INFOPLIST_FILE: YES
+
+schemes:
+  Papir:
+    build:
+      targets:
+        Papir: all
+        PapirTests: [test]
+    test:
+      targets:
+        - PapirTests
